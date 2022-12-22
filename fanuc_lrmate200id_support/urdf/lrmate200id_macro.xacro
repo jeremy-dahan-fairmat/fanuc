@@ -153,6 +153,13 @@
       <axis xyz="-1 0 0"/>
       <limit effort="0" lower="${radians(-360)}" upper="${radians(360)}" velocity="${radians(1000)}" />
     </joint>
+    <joint name="${prefix}gripper" type="fixed">
+      <origin xyz="0.080 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}link_6"/>
+      <axis xyz="-1 0 0"/>
+      <!-- <limit effort="0" lower="${radians(-360)}" upper="${radians(360)}" velocity="${radians(1000)}" /> -->
+    </joint>
 
     <!-- ROS-Industrial 'base' frame: base_link to Fanuc World Coordinates transform -->
     <link name="${prefix}base" />

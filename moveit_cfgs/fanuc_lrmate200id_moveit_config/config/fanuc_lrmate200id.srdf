@@ -20,6 +20,7 @@
         <joint name="joint_4" value="0" />
         <joint name="joint_5" value="0" />
         <joint name="joint_6" value="0" />
+        <joint name="gripper" value="0" />
     </group_state>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
     <virtual_joint name="FixedBase" type="fixed" parent_frame="world" child_link="base_link" />

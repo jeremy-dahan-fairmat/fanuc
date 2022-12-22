@@ -32,3 +32,8 @@ joint_limits:
     max_velocity: 17.45
     has_acceleration_limits: true
     max_acceleration: 3.49
+  gripper:
+    has_velocity_limits: true
+    max_velocity: 17.45
+    has_acceleration_limits: true
+    max_acceleration: 3.49
